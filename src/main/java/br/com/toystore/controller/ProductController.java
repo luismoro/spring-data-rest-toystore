@@ -27,6 +27,10 @@ public class ProductController {
     @Autowired
     ProductFacade productFacade;
 
+    //Heroku
+    // https://spring-data-rest-toystore.herokuapp.com
+    
+    //Local
     // GET localhost:8080/productTypes
     // POST localhost:8080/productTypes - {"name":"name2"}
     // GET localhost:8080/products
