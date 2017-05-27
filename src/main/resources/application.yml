@@ -1,0 +1,20 @@
+spring.data.rest:
+  returnBodyOnCreate: true
+  returnBodyOnUpdate: true
+
+spring:
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate.ddl-auto: update
+#    hibernate.ddl-auto: create-drop
+  datasource:
+    platform:
+    driverClassName: org.postgresql.Driver
+    url: ${SPRING_DATASOURCE_URL}
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
+server.port: 8080
+
+logging.level: INFO
+spring.jackson.serialization.fail_on_empty_beans: false
